@@ -1,0 +1,7 @@
+.footerComponent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: black;
+    height: 300px;
+    border-top: 1px solid white;
+}

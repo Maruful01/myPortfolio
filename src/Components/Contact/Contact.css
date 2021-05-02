@@ -1,0 +1,28 @@
+.message-box {
+    width: 40%;
+    margin: 30px auto;
+    text-align: left;
+}
+.input-field {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: white;
+    height: 40px;
+    color: gray;
+    border: 2px solid #00eeff;
+    padding: 5px;
+}
+.textarea-field {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: none;
+    color: gray;
+    border: 1px solid orangered;
+    background: white;
+}

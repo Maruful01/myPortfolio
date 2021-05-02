@@ -1,0 +1,115 @@
+.gridCl2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    text-align: center;
+    background-color: black;
+    position: relative;
+    z-index: 2;
+    padding: 50px;
+    height: 750px;
+    animation-name: animate-on;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+}
+
+.imgMe {
+       position: relative;
+       top: 20%;
+       right: 0px;
+       z-index: -5;
+       height: 450px;
+}
+@keyframes animate {
+    0% {
+        border-bottom: 5px solid red;
+        border-right:  2px solid blue;
+        border-top:  5px solid #ffff003a;
+        border-left:  2px solid blue;
+    }
+    100% {
+        border-bottom: 5px solid purple;
+        border-right:  2px solid greenyellow;
+        border-top:  5px solid indianred;
+        border-left:  2px solid yellow;
+    }
+
+}
+.animations {
+    position: relative;
+    z-index: 6;
+    margin: 0;
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+.animations::before {
+     
+    content: '';
+    position: absolute;
+    left: 110%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+    animation: header-animate 5.5s linear forwards;
+
+}
+@keyframes header-animate {
+
+    0% {
+        left:  -20%;
+    }
+
+    100% {
+        left: 110%;
+    }
+
+}
+.animations span { 
+    color: #ff022c;
+}
+.wallpaper {
+    display: inline-flex;
+}
+.wallpaper .staticText {
+    font-size: 30px;
+    color: white;
+}
+.wallpaper .dynamicText {
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.dynamicText li {
+    color: red;
+    text-shadow: 20px 1px 10px blue;
+    list-style: none;
+    font-size: 30px;
+}
+
+.dynamicText li span {
+    position: relative;
+}
+
+.dynamicText li span::after{
+   content: '';
+   position: absolute;
+   left: 0px;
+   height: 100%;
+   width: 100%;
+   border-left: 2px solid red;
+   margin-left: 10px;
+   background: black;
+   animation: typing 5s steps(19) infinite;
+}
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -25px 0 25px;
+    }
+}

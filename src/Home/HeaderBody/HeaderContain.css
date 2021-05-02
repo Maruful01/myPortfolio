@@ -1,0 +1,78 @@
+.header-contain-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: "10px";
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    height: 500px;
+}
+.btn-class {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.about-box {
+    background-color: #7272728f;
+    padding: 10px;
+    height: 450px;
+    box-sizing: border-box;
+}
+.my-image {
+    height: 450px;
+    align-items: center;
+    margin-right: 20px;
+    position: relative;
+    left: -50px;
+}
+.small-device {
+    display: none;
+}
+.btn-small {
+    margin: 10px;
+}
+@media only screen and (max-width: 1133px) {
+
+    .header-contain-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .about-box {
+        display: none;
+    }
+    .small-device {
+        display: block;
+        text-align: center;
+        margin: 10px;
+    }
+
+    @media only screen and (max-width: 740px) {
+        .my-image {
+            height: 350px;
+            align-items: center;
+            margin-right: 20px;
+            position: relative;
+            left: -20px;
+        }
+        .small-device {
+            width: 100%;
+
+        }
+    }
+
+    @media only screen and (max-width: 740px) {
+        .my-image {
+            height: 250px;
+            left: -20px;
+        }
+        .small-device {
+            width: 100%;
+
+        }
+    }
+
+    
+}
